@@ -1,0 +1,41 @@
+{
+    "author": "ethan-funny",
+    "description": "Notes for Learning Python",
+    "extension": null,
+    "generator": "site",
+    "links": {
+        "sharing": {
+            "all": null,
+            "facebook": null,
+            "google": null,
+            "twitter": null,
+            "weibo": null
+        },
+        "sidebar": {
+            "ethan-funny's Blog": "https://funhacks.net"
+        }
+    },
+    "output": null,
+    "pdf": {
+        "toc": true,
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": false,
+        "paperSize": "a4"
+    },
+    "plugins": [""],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": false
+        }
+    },
+    "title": "Python 之旅",
+    "variables": {}
+}

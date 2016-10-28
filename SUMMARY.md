@@ -22,10 +22,6 @@
     * [闭包](Functional/closure.md)
     * [装饰器](Functional/decorator.md)
     * [functools](Functional/functools.md)
-* [高级特性](Advanced-Features/README.md)
-    * [迭代器](Advanced-Features/iterator.md)
-    * [生成器](Advanced-Features/generator.md)
-    * [上下文管理器](Advanced-Features/context.md)
 * [类](Class/README.md)
     * [类和实例](Class/class_and_object.md)
     * [继承和多态](Class/inheritance_and_polymorphism.md)
@@ -35,6 +31,10 @@
     * [slots 魔法](Class/slots.md)
     * [使用 @property](Class/property.md)
     * [元类](Class/metaclass.md)
+* [高级特性](Advanced-Features/README.md)
+    * [迭代器](Advanced-Features/iterator.md)
+    * [生成器](Advanced-Features/generator.md)
+    * [上下文管理器](Advanced-Features/context.md)
 * [文件和目录](File-Directory/README.md)
     * 文件操作
     * 读写图像

@@ -1,0 +1,1196 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>集合 · Python 之旅</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        <meta name="author" content="ethan-funny">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Function/" />
+    
+    
+    <link rel="prev" href="dict.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://funhacks.net" target="_blank" class="custom-link">ethan-funny's Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Basic/">
+            
+                <a href="../Basic/">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Basic/character_encoding.html">
+            
+                <a href="../Basic/character_encoding.html">
+            
+                    
+                    字符编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Basic/input_output.html">
+            
+                <a href="../Basic/input_output.html">
+            
+                    
+                    输入和输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    常用数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="list.html">
+            
+                <a href="list.html">
+            
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="tuple.html">
+            
+                <a href="tuple.html">
+            
+                    
+                    元组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="string.html">
+            
+                <a href="string.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="dict.html">
+            
+                <a href="dict.html">
+            
+                    
+                    字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="set.html">
+            
+                <a href="set.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Function/">
+            
+                <a href="../Function/">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Function/func_definition.html">
+            
+                <a href="../Function/func_definition.html">
+            
+                    
+                    定义函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Function/func_parameter.html">
+            
+                <a href="../Function/func_parameter.html">
+            
+                    
+                    函数参数魔法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Functional/">
+            
+                <a href="../Functional/">
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Functional/high_order_func.html">
+            
+                <a href="../Functional/high_order_func.html">
+            
+                    
+                    高阶函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Functional/map_reduce_filter.html">
+            
+                <a href="../Functional/map_reduce_filter.html">
+            
+                    
+                    map/reduce/filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Functional/anonymous_func.html">
+            
+                <a href="../Functional/anonymous_func.html">
+            
+                    
+                    匿名函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Functional/closure.html">
+            
+                <a href="../Functional/closure.html">
+            
+                    
+                    携带状态的闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../Functional/decorator.html">
+            
+                <a href="../Functional/decorator.html">
+            
+                    
+                    会打扮的装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../Functional/partial.html">
+            
+                <a href="../Functional/partial.html">
+            
+                    
+                    partial 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Class/">
+            
+                <a href="../Class/">
+            
+                    
+                    类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Class/class_and_object.html">
+            
+                <a href="../Class/class_and_object.html">
+            
+                    
+                    类和实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Class/inheritance_and_polymorphism.html">
+            
+                <a href="../Class/inheritance_and_polymorphism.html">
+            
+                    
+                    继承和多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Class/method.html">
+            
+                <a href="../Class/method.html">
+            
+                    
+                    类方法和静态方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Class/magic_method.html">
+            
+                <a href="../Class/magic_method.html">
+            
+                    
+                    定制类和魔法方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Class/slots.html">
+            
+                <a href="../Class/slots.html">
+            
+                    
+                    slots 魔法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Class/property.html">
+            
+                <a href="../Class/property.html">
+            
+                    
+                    使用 @property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Class/super.html">
+            
+                <a href="../Class/super.html">
+            
+                    
+                    你不知道的 super
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Class/metaclass.html">
+            
+                <a href="../Class/metaclass.html">
+            
+                    
+                    陌生的 metaclass
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Advanced-Features/">
+            
+                <a href="../Advanced-Features/">
+            
+                    
+                    高级特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Advanced-Features/iterator.html">
+            
+                <a href="../Advanced-Features/iterator.html">
+            
+                    
+                    迭代器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Advanced-Features/generator.html">
+            
+                <a href="../Advanced-Features/generator.html">
+            
+                    
+                    生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Advanced-Features/context.html">
+            
+                <a href="../Advanced-Features/context.html">
+            
+                    
+                    上下文管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../File-Directory/">
+            
+                <a href="../File-Directory/">
+            
+                    
+                    文件和目录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../File-Directory/text_file_io.html">
+            
+                <a href="../File-Directory/text_file_io.html">
+            
+                    
+                    读写文本文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../File-Directory/binary_file_io.html">
+            
+                <a href="../File-Directory/binary_file_io.html">
+            
+                    
+                    读写二进制文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../File-Directory/os.html">
+            
+                <a href="../File-Directory/os.html">
+            
+                    
+                    os 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Process-Thread-Coroutine/">
+            
+                <a href="../Process-Thread-Coroutine/">
+            
+                    
+                    进程、线程和协程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Process-Thread-Coroutine/process.html">
+            
+                <a href="../Process-Thread-Coroutine/process.html">
+            
+                    
+                    进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Process-Thread-Coroutine/thread.html">
+            
+                <a href="../Process-Thread-Coroutine/thread.html">
+            
+                    
+                    线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Process-Thread-Coroutine/threadlocal.html">
+            
+                <a href="../Process-Thread-Coroutine/threadlocal.html">
+            
+                    
+                    ThreadLocal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Process-Thread-Coroutine/coroutine.html">
+            
+                <a href="../Process-Thread-Coroutine/coroutine.html">
+            
+                    
+                    协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Exception/">
+            
+                <a href="../Exception/">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Testing/">
+            
+                <a href="../Testing/">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Regular-Expressions/">
+            
+                <a href="../Regular-Expressions/">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../Regular-Expressions/re.html">
+            
+                <a href="../Regular-Expressions/re.html">
+            
+                    
+                    re 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../HTTP/">
+            
+                <a href="../HTTP/">
+            
+                    
+                    HTTP 服务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../HTTP/HTTP.html">
+            
+                <a href="../HTTP/HTTP.html">
+            
+                    
+                    HTTP 协议简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../HTTP/Requests.html">
+            
+                <a href="../HTTP/Requests.html">
+            
+                    
+                    Requests 库的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Standard-Modules/">
+            
+                <a href="../Standard-Modules/">
+            
+                    
+                    标准模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../Standard-Modules/argparse.html">
+            
+                <a href="../Standard-Modules/argparse.html">
+            
+                    
+                    argparse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../Standard-Modules/base64.html">
+            
+                <a href="../Standard-Modules/base64.html">
+            
+                    
+                    base64
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../Standard-Modules/collections.html">
+            
+                <a href="../Standard-Modules/collections.html">
+            
+                    
+                    collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../Standard-Modules/datetime.html">
+            
+                <a href="../Standard-Modules/datetime.html">
+            
+                    
+                    datetime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="../Standard-Modules/hashlib.html">
+            
+                <a href="../Standard-Modules/hashlib.html">
+            
+                    
+                    hashlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="../Standard-Modules/hmac.html">
+            
+                <a href="../Standard-Modules/hmac.html">
+            
+                    
+                    hmac
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Third-Party-Modules/">
+            
+                <a href="../Third-Party-Modules/">
+            
+                    
+                    第三方模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../Third-Party-Modules/celery.html">
+            
+                <a href="../Third-Party-Modules/celery.html">
+            
+                    
+                    celery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../Third-Party-Modules/click.html">
+            
+                <a href="../Third-Party-Modules/click.html">
+            
+                    
+                    click
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Conclusion/">
+            
+                <a href="../Conclusion/">
+            
+                    
+                    结束语
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../Conclusion/resource_recommendation.html">
+            
+                <a href="../Conclusion/resource_recommendation.html">
+            
+                    
+                    资源推荐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../Conclusion/reference_material.html">
+            
+                <a href="../Conclusion/reference_material.html">
+            
+                    
+                    参考资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >集合</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x96C6;&#x5408;">&#x96C6;&#x5408;</h1>
+<p>&#x96C6;&#x5408;&#xFF08;set&#xFF09;&#x548C;&#x5B57;&#x5178;&#xFF08;dict&#xFF09;&#x7C7B;&#x4F3C;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x7EC4; key &#x7684;&#x96C6;&#x5408;&#xFF0C;&#x4F46;&#x4E0D;&#x5B58;&#x50A8; value&#x3002;&#x96C6;&#x5408;&#x7684;&#x7279;&#x6027;&#x5C31;&#x662F;&#xFF1A;key &#x4E0D;&#x80FD;&#x91CD;&#x590D;&#x3002;</p>
+<h1 id="&#x96C6;&#x5408;&#x5E38;&#x7528;&#x64CD;&#x4F5C;">&#x96C6;&#x5408;&#x5E38;&#x7528;&#x64CD;&#x4F5C;</h1>
+<h2 id="&#x521B;&#x5EFA;&#x96C6;&#x5408;">&#x521B;&#x5EFA;&#x96C6;&#x5408;</h2>
+<p>set &#x7684;&#x521B;&#x5EFA;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>{}</code> &#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; set &#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>s1 = {<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>}   <span class="hljs-comment"># &#x4F7F;&#x7528; {}</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>s1
+set([<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>])
+&gt;&gt;&gt;
+<span class="hljs-meta">&gt;&gt;&gt; </span>s2 = set(<span class="hljs-string">&apos;helloworld&apos;</span>)                <span class="hljs-comment"># &#x4F7F;&#x7528; set()&#xFF0C;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>s2
+set([<span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;h&apos;</span>, <span class="hljs-string">&apos;l&apos;</span>, <span class="hljs-string">&apos;o&apos;</span>, <span class="hljs-string">&apos;r&apos;</span>, <span class="hljs-string">&apos;w&apos;</span>])
+&gt;&gt;&gt;
+<span class="hljs-meta">&gt;&gt;&gt; </span>s3 = set([<span class="hljs-string">&apos;.mp3&apos;</span>, <span class="hljs-string">&apos;.mp4&apos;</span>, <span class="hljs-string">&apos;.rmvb&apos;</span>, <span class="hljs-string">&apos;.mkv&apos;</span>, <span class="hljs-string">&apos;.mp3&apos;</span>])   <span class="hljs-comment"># &#x4F7F;&#x7528; set()&#xFF0C;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x5217;&#x8868;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>s3
+set([<span class="hljs-string">&apos;.mp3&apos;</span>, <span class="hljs-string">&apos;.mkv&apos;</span>, <span class="hljs-string">&apos;.rmvb&apos;</span>, <span class="hljs-string">&apos;.mp4&apos;</span>])
+</code></pre>
+<h2 id="&#x904D;&#x5386;&#x96C6;&#x5408;">&#x904D;&#x5386;&#x96C6;&#x5408;</h2>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>s = {<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> e <span class="hljs-keyword">in</span> s:
+<span class="hljs-meta">... </span>    <span class="hljs-keyword">print</span> e
+...
+a
+c
+b
+d
+</code></pre>
+<h2 id="&#x6DFB;&#x52A0;&#x5143;&#x7D20;">&#x6DFB;&#x52A0;&#x5143;&#x7D20;</h2>
+<p><code>add()</code> &#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5C06;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x5230; set &#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#x6DFB;&#x52A0;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x6548;&#x679C;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>s = {<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span>s
+set([<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>s.add(<span class="hljs-string">&apos;e&apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>s
+set([<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>s.add(<span class="hljs-string">&apos;a&apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>s
+set([<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>s.add(<span class="hljs-number">4</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>s
+set([<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-number">4</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>])
+</code></pre>
+<h2 id="&#x5220;&#x9664;&#x5143;&#x7D20;">&#x5220;&#x9664;&#x5143;&#x7D20;</h2>
+<p><code>remove()</code> &#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x770B;&#x770B;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>s = {<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span>s
+set([<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>s.remove(<span class="hljs-string">&apos;a&apos;</span>)           <span class="hljs-comment"># &#x5220;&#x9664;&#x5143;&#x7D20; &apos;a&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>s
+set([<span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>s.remove(<span class="hljs-string">&apos;e&apos;</span>)           <span class="hljs-comment"># &#x5220;&#x9664;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x4F1A;&#x629B;&#x51FA; KeyErro</span>
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+KeyError: <span class="hljs-string">&apos;e&apos;</span>
+</code></pre>
+<h2 id="&#x4EA4;&#x96C6;&#x5E76;&#x96C6;&#x5DEE;&#x96C6;">&#x4EA4;&#x96C6;/&#x5E76;&#x96C6;/&#x5DEE;&#x96C6;</h2>
+<p>Python &#x4E2D;&#x7684;&#x96C6;&#x5408;&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x6210;&#x662F;&#x6570;&#x5B66;&#x610F;&#x4E49;&#x4E0A;&#x7684;&#x65E0;&#x5E8F;&#x548C;&#x65E0;&#x91CD;&#x590D;&#x5143;&#x7D20;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5BF9;&#x4E24;&#x4E2A;&#x96C6;&#x5408;&#x4F5C;&#x4EA4;&#x96C6;&#x3001;&#x5E76;&#x96C6;&#x7B49;&#x3002;</p>
+<p>&#x770B;&#x770B;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>s1 = {<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span>s2 = {<span class="hljs-number">3</span>, <span class="hljs-number">6</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">12</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span>s3 = {<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span>s1 &amp; s2            <span class="hljs-comment"># &#x4EA4;&#x96C6;</span>
+set([<span class="hljs-number">3</span>, <span class="hljs-number">6</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>s1 | s2            <span class="hljs-comment"># &#x5E76;&#x96C6;</span>
+set([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">12</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>s1 - s2            <span class="hljs-comment"># &#x5DEE;&#x96C6;</span>
+set([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>s3.issubset(s1)    <span class="hljs-comment"># s3 &#x662F;&#x5426;&#x662F; s1 &#x7684;&#x5B50;&#x96C6;</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>s3.issubset(s2)    <span class="hljs-comment"># s3 &#x662F;&#x5426;&#x662F; s2 &#x7684;&#x5B50;&#x96C6;</span>
+<span class="hljs-keyword">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>s1.issuperset(s3)  <span class="hljs-comment"># s1 &#x662F;&#x5426;&#x662F; s3 &#x7684;&#x8D85;&#x96C6;</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>s1.issuperset(s2)  <span class="hljs-comment"># s1 &#x662F;&#x5426;&#x662F; s2 &#x7684;&#x8D85;&#x96C6;</span>
+<span class="hljs-keyword">False</span>
+</code></pre>
+<h1 id="&#x53C2;&#x8003;&#x8D44;&#x6599;">&#x53C2;&#x8003;&#x8D44;&#x6599;</h1>
+<ul>
+<li><a href="http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/0013868193482529754158abf734c00bba97c87f89a263b000" _target="blank">&#x4F7F;&#x7528;dict&#x548C;set - &#x5ED6;&#x96EA;&#x5CF0;&#x7684;&#x5B98;&#x65B9;&#x7F51;&#x7AD9;</a></li>
+<li><a href="http://codingnow.cn/language/353.html" _target="blank">python&#x5B57;&#x5178;&#x548C;&#x96C6;&#x5408; | Alex&apos;s Blog</a></li>
+<li><a href="http://stackoverflow.com/questions/36674083/why-is-it-possible-to-replace-set-with" _target="blank">python - Why is it possible to replace set() with {}? - Stack Overflow</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="dict.html" class="navigation navigation-prev " aria-label="Previous page: 字典">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Function/" class="navigation navigation-next " aria-label="Next page: 函数">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"集合","level":"1.3.5","depth":2,"next":{"title":"函数","level":"1.4","depth":1,"path":"Function/README.md","ref":"Function/README.md","articles":[{"title":"定义函数","level":"1.4.1","depth":2,"path":"Function/func_definition.md","ref":"Function/func_definition.md","articles":[]},{"title":"函数参数魔法","level":"1.4.2","depth":2,"path":"Function/func_parameter.md","ref":"Function/func_parameter.md","articles":[]}]},"previous":{"title":"字典","level":"1.3.4","depth":2,"path":"Datatypes/dict.md","ref":"Datatypes/dict.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"showLevel":false,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"ethan-funny","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"toc":true,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 之旅","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"ethan-funny's Blog":"https://funhacks.net"}},"gitbook":"*","description":"Notes for Learning Python","extension":null},"file":{"path":"Datatypes/set.md","mtime":"2016-11-22T02:47:22.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2016-12-12T08:17:32.946Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

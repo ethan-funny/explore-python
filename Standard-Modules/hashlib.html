@@ -1,0 +1,1154 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>hashlib · Python 之旅</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        <meta name="author" content="ethan-funny">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="hmac.html" />
+    
+    
+    <link rel="prev" href="datetime.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://funhacks.net" target="_blank" class="custom-link">ethan-funny's Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Basic/">
+            
+                <a href="../Basic/">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Basic/character_encoding.html">
+            
+                <a href="../Basic/character_encoding.html">
+            
+                    
+                    字符编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Basic/input_output.html">
+            
+                <a href="../Basic/input_output.html">
+            
+                    
+                    输入和输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Datatypes/">
+            
+                <a href="../Datatypes/">
+            
+                    
+                    常用数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Datatypes/list.html">
+            
+                <a href="../Datatypes/list.html">
+            
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Datatypes/tuple.html">
+            
+                <a href="../Datatypes/tuple.html">
+            
+                    
+                    元组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Datatypes/string.html">
+            
+                <a href="../Datatypes/string.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Datatypes/dict.html">
+            
+                <a href="../Datatypes/dict.html">
+            
+                    
+                    字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Datatypes/set.html">
+            
+                <a href="../Datatypes/set.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Function/">
+            
+                <a href="../Function/">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Function/func_definition.html">
+            
+                <a href="../Function/func_definition.html">
+            
+                    
+                    定义函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Function/func_parameter.html">
+            
+                <a href="../Function/func_parameter.html">
+            
+                    
+                    函数参数魔法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Functional/">
+            
+                <a href="../Functional/">
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Functional/high_order_func.html">
+            
+                <a href="../Functional/high_order_func.html">
+            
+                    
+                    高阶函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Functional/map_reduce_filter.html">
+            
+                <a href="../Functional/map_reduce_filter.html">
+            
+                    
+                    map/reduce/filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Functional/anonymous_func.html">
+            
+                <a href="../Functional/anonymous_func.html">
+            
+                    
+                    匿名函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Functional/closure.html">
+            
+                <a href="../Functional/closure.html">
+            
+                    
+                    携带状态的闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../Functional/decorator.html">
+            
+                <a href="../Functional/decorator.html">
+            
+                    
+                    会打扮的装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../Functional/partial.html">
+            
+                <a href="../Functional/partial.html">
+            
+                    
+                    partial 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Class/">
+            
+                <a href="../Class/">
+            
+                    
+                    类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Class/class_and_object.html">
+            
+                <a href="../Class/class_and_object.html">
+            
+                    
+                    类和实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Class/inheritance_and_polymorphism.html">
+            
+                <a href="../Class/inheritance_and_polymorphism.html">
+            
+                    
+                    继承和多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Class/method.html">
+            
+                <a href="../Class/method.html">
+            
+                    
+                    类方法和静态方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Class/magic_method.html">
+            
+                <a href="../Class/magic_method.html">
+            
+                    
+                    定制类和魔法方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Class/slots.html">
+            
+                <a href="../Class/slots.html">
+            
+                    
+                    slots 魔法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Class/property.html">
+            
+                <a href="../Class/property.html">
+            
+                    
+                    使用 @property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Class/super.html">
+            
+                <a href="../Class/super.html">
+            
+                    
+                    你不知道的 super
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Class/metaclass.html">
+            
+                <a href="../Class/metaclass.html">
+            
+                    
+                    陌生的 metaclass
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Advanced-Features/">
+            
+                <a href="../Advanced-Features/">
+            
+                    
+                    高级特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Advanced-Features/iterator.html">
+            
+                <a href="../Advanced-Features/iterator.html">
+            
+                    
+                    迭代器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Advanced-Features/generator.html">
+            
+                <a href="../Advanced-Features/generator.html">
+            
+                    
+                    生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Advanced-Features/context.html">
+            
+                <a href="../Advanced-Features/context.html">
+            
+                    
+                    上下文管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../File-Directory/">
+            
+                <a href="../File-Directory/">
+            
+                    
+                    文件和目录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../File-Directory/text_file_io.html">
+            
+                <a href="../File-Directory/text_file_io.html">
+            
+                    
+                    读写文本文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../File-Directory/binary_file_io.html">
+            
+                <a href="../File-Directory/binary_file_io.html">
+            
+                    
+                    读写二进制文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../File-Directory/os.html">
+            
+                <a href="../File-Directory/os.html">
+            
+                    
+                    os 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Process-Thread-Coroutine/">
+            
+                <a href="../Process-Thread-Coroutine/">
+            
+                    
+                    进程、线程和协程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Process-Thread-Coroutine/process.html">
+            
+                <a href="../Process-Thread-Coroutine/process.html">
+            
+                    
+                    进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Process-Thread-Coroutine/thread.html">
+            
+                <a href="../Process-Thread-Coroutine/thread.html">
+            
+                    
+                    线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Process-Thread-Coroutine/threadlocal.html">
+            
+                <a href="../Process-Thread-Coroutine/threadlocal.html">
+            
+                    
+                    ThreadLocal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Process-Thread-Coroutine/coroutine.html">
+            
+                <a href="../Process-Thread-Coroutine/coroutine.html">
+            
+                    
+                    协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Exception/">
+            
+                <a href="../Exception/">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Testing/">
+            
+                <a href="../Testing/">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Regular-Expressions/">
+            
+                <a href="../Regular-Expressions/">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../Regular-Expressions/re.html">
+            
+                <a href="../Regular-Expressions/re.html">
+            
+                    
+                    re 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../HTTP/">
+            
+                <a href="../HTTP/">
+            
+                    
+                    HTTP 服务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../HTTP/HTTP.html">
+            
+                <a href="../HTTP/HTTP.html">
+            
+                    
+                    HTTP 协议简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../HTTP/Requests.html">
+            
+                <a href="../HTTP/Requests.html">
+            
+                    
+                    Requests 库的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    标准模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="argparse.html">
+            
+                <a href="argparse.html">
+            
+                    
+                    argparse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="base64.html">
+            
+                <a href="base64.html">
+            
+                    
+                    base64
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="collections.html">
+            
+                <a href="collections.html">
+            
+                    
+                    collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="datetime.html">
+            
+                <a href="datetime.html">
+            
+                    
+                    datetime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14.5" data-path="hashlib.html">
+            
+                <a href="hashlib.html">
+            
+                    
+                    hashlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="hmac.html">
+            
+                <a href="hmac.html">
+            
+                    
+                    hmac
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Third-Party-Modules/">
+            
+                <a href="../Third-Party-Modules/">
+            
+                    
+                    第三方模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../Third-Party-Modules/celery.html">
+            
+                <a href="../Third-Party-Modules/celery.html">
+            
+                    
+                    celery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../Third-Party-Modules/click.html">
+            
+                <a href="../Third-Party-Modules/click.html">
+            
+                    
+                    click
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Conclusion/">
+            
+                <a href="../Conclusion/">
+            
+                    
+                    结束语
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../Conclusion/resource_recommendation.html">
+            
+                <a href="../Conclusion/resource_recommendation.html">
+            
+                    
+                    资源推荐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../Conclusion/reference_material.html">
+            
+                <a href="../Conclusion/reference_material.html">
+            
+                    
+                    参考资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >hashlib</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="hashlib">hashlib</h1>
+<p>Python &#x5185;&#x7F6E;&#x7684; hashlib &#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x4E86;&#x5E38;&#x89C1;&#x7684;<strong>&#x6458;&#x8981;&#x7B97;&#x6CD5;</strong>&#xFF08;&#x6216;&#x79F0;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;&#xFF0C;&#x6563;&#x5217;&#x7B97;&#x6CD5;&#xFF09;&#xFF0C;&#x5982; MD5&#xFF0C;SHA1, SHA256 &#x7B49;&#x3002;<strong>&#x6458;&#x8981;&#x7B97;&#x6CD5;&#x7684;&#x57FA;&#x672C;&#x539F;&#x7406;&#x662F;&#xFF1A;&#x5C06;&#x6570;&#x636E;&#xFF08;&#x5982;&#x4E00;&#x6BB5;&#x6587;&#x5B57;&#xFF09;&#x8FD0;&#x7B97;&#x53D8;&#x4E3A;&#x53E6;&#x4E00;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x503C;</strong>&#x3002;</p>
+<p>MD5 (Message-Digest Algorithm 5, &#x6D88;&#x606F;&#x6458;&#x8981;&#x7B97;&#x6CD5;&#xFF09;&#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x88AB;&#x5E7F;&#x6CDB;&#x4F7F;&#x7528;&#x7684;&#x5BC6;&#x7801;&#x6563;&#x5217;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x4EA7;&#x751F;&#x51FA;&#x4E00;&#x4E2A; 128 &#x4F4D;&#xFF08;16 &#x5B57;&#x8282;&#xFF09;&#x7684;&#x6563;&#x5217;&#x503C;&#xFF08;hash value&#xFF09;&#xFF0C;&#x7528;&#x4E8E;&#x786E;&#x4FDD;&#x4FE1;&#x606F;&#x4F20;&#x8F93;&#x5B8C;&#x6574;&#x4E00;&#x81F4;&#x3002;</p>
+<p>SHA1 (Secure Hash Algorithm, &#x5B89;&#x5168;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;) &#x662F; SHA &#x5BB6;&#x65CF;&#x7684;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x7B97;&#x6CD5;&#xFF0C;&#x5B83;&#x7ECF;&#x5E38;&#x88AB;&#x7528;&#x4F5C;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x3002;</p>
+<h1 id="md5">MD5</h1>
+<p>hashlib &#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x4E86; <code>md5</code> &#x51FD;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x5730;&#x4F7F;&#x7528;&#x5B83;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> hashlib
+&gt;&gt;&gt;
+<span class="hljs-meta">&gt;&gt;&gt; </span>m = hashlib.md5(<span class="hljs-string">&apos;md5 test in Python!&apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>m.digest()
+<span class="hljs-string">&apos;\xad\xc0\x99\x01\x12\xc7&amp;\xb5~\xb0\xaf \x974\x11\xab&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>m.hexdigest()   <span class="hljs-comment"># &#x4F7F;&#x7528;&#x4E00;&#x4E2A; 32 &#x4F4D;&#x7684; 16 &#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x793A;</span>
+<span class="hljs-string">&apos;adc0990112c726b57eb0af20973411ab&apos;</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x662F;&#x76F4;&#x63A5;&#x628A;&#x6570;&#x636E;&#x4F20;&#x5165; <code>md5()</code> &#x51FD;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x6B21;&#x6216;&#x591A;&#x6B21;&#x4F7F;&#x7528; <code>update</code> &#x6765;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> hashlib
+<span class="hljs-meta">&gt;&gt;&gt; </span>m = hashlib.md5()
+<span class="hljs-meta">&gt;&gt;&gt; </span>m.update(<span class="hljs-string">&apos;md5 test &apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>m.update(<span class="hljs-string">&apos;in Python!&apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>m.hexdigest()
+<span class="hljs-string">&apos;adc0990112c726b57eb0af20973411ab&apos;</span>
+</code></pre>
+<h1 id="sha1">SHA1</h1>
+<p>SHA1 &#x7684;&#x4F7F;&#x7528;&#x548C; MD5 &#x7684;&#x4F7F;&#x7528;&#x7C7B;&#x4F3C;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> hashlib
+&gt;&gt;&gt;
+<span class="hljs-meta">&gt;&gt;&gt; </span>sha1 = hashlib.sha1()
+<span class="hljs-meta">&gt;&gt;&gt; </span>sha1.update(<span class="hljs-string">&apos;md5 test &apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>sha1.update(<span class="hljs-string">&apos;in Python!&apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>sha1.hexdigest()
+<span class="hljs-string">&apos;698a8b18d5f99a140520475c342af455183c58a3&apos;</span>
+</code></pre>
+<h1 id="&#x5C0F;&#x7ED3;">&#x5C0F;&#x7ED3;</h1>
+<ul>
+<li>MD5 &#x7ECF;&#x5E38;&#x7528;&#x6765;&#x505A;&#x7528;&#x6237;&#x5BC6;&#x7801;&#x7684;&#x5B58;&#x50A8;&#xFF0C;&#x800C; SHA1 &#x5219;&#x7ECF;&#x5E38;&#x7528;&#x4F5C;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x3002;</li>
+</ul>
+<h1 id="&#x53C2;&#x8003;&#x8D44;&#x6599;">&#x53C2;&#x8003;&#x8D44;&#x6599;</h1>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/MD5" _target="blank">MD5 - &#x7EF4;&#x57FA;&#x767E;&#x79D1;&#xFF0C;&#x81EA;&#x7531;&#x7684;&#x767E;&#x79D1;&#x5168;&#x4E66;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/SHA%E5%AE%B6%E6%97%8F" _target="blank">SHA&#x5BB6;&#x65CF; - &#x7EF4;&#x57FA;&#x767E;&#x79D1;&#xFF0C;&#x81EA;&#x7531;&#x7684;&#x767E;&#x79D1;&#x5168;&#x4E66;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="datetime.html" class="navigation navigation-prev " aria-label="Previous page: datetime">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="hmac.html" class="navigation navigation-next " aria-label="Next page: hmac">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"hashlib","level":"1.14.5","depth":2,"next":{"title":"hmac","level":"1.14.6","depth":2,"path":"Standard-Modules/hmac.md","ref":"Standard-Modules/hmac.md","articles":[]},"previous":{"title":"datetime","level":"1.14.4","depth":2,"path":"Standard-Modules/datetime.md","ref":"Standard-Modules/datetime.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"showLevel":false,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"ethan-funny","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"toc":true,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 之旅","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"ethan-funny's Blog":"https://funhacks.net"}},"gitbook":"*","description":"Notes for Learning Python","extension":null},"file":{"path":"Standard-Modules/hashlib.md","mtime":"2016-12-09T10:00:20.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2016-12-12T08:17:32.946Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

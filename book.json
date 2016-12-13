@@ -12,7 +12,8 @@
             "weibo": null
         },
         "sidebar": {
-            "ethan-funny's Blog": "https://funhacks.net"
+            "Blog": "https://funhacks.net",
+            "Github": "https://github.com/ethan-funny/explore-python/"
         }
     },
     "output": null,
@@ -30,13 +31,10 @@
         "pageNumbers": false,
         "paperSize": "a4"
     },
-    "plugins": ["disqus"],
+    "plugins": [],
     "pluginsConfig": {
         "theme-default": {
             "showLevel": false
-        },
-        "disqus": {
-            "shortName": "funhacks"
         }
     },
     "title": "Python 之旅",

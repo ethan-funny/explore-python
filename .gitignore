@@ -3,3 +3,4 @@
 *.py[cod]
 .Ulysses*
 _book
+node_modules/*

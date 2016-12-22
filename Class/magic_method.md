@@ -1,14 +1,62 @@
 # 定制类和魔法方法
 
-在 Python 中，我们可以经常看到以双下划线 `__` 包裹起来的方法，比如最常见的 `__init__`，这些方法被称为**魔法方法（magic method）或特殊方法（special method）**。简单地说，这些方法可以给 Python 的类提供特殊功能，方便我们定制一个类，比如 `__init__` 方法可以对类属性进行初始化。
+在 Python 中，我们可以经常看到以双下划线 `__` 包裹起来的方法，比如最常见的 `__init__`，这些方法被称为**魔法方法（magic method）或特殊方法（special method）**。简单地说，这些方法可以给 Python 的类提供特殊功能，方便我们定制一个类，比如 `__init__` 方法可以对实例属性进行初始化。
 
-完整的特殊方法列表可在[这里](https://docs.python.org/2/reference/datamodel.html#special-method-names)查看，本文只介绍以下一些常用的特殊方法：
+完整的特殊方法列表可在[这里](https://docs.python.org/2/reference/datamodel.html#special-method-names)查看，本文介绍部分常用的特殊方法：
 
+- `__new__`
 - `__str__` , `__repr__`
 - `__iter__`
 - `__getitem__` , `__setitem__` , `__delitem__`
 - `__getattr__` , `__setattr__` , `__delattr__`
 - `__call__`
+
+# new
+
+在 Python 中，当我们创建一个类的实例时，类会先调用 `__new__(cls[, ...])` 来创建实例，然后 `__init__` 方法再对该实例（self）进行初始化。
+
+关于 `__new__` 和 `__init__` 有几点需要注意：
+
+- `__new__` 是在 `__init__` 之前被调用的；
+- `__new__` 是类方法，`__init__` 是实例方法；
+- 重载 `__new__` 方法，需要返回类的实例；
+
+一般情况下，我们不需要重载 `__new__` 方法。但在某些情况下，我们想**控制实例的创建过程**，这时可以通过重载 `__new_` 方法来实现。
+
+让我们看一个例子：
+
+```python
+class A(object):
+    _dict = dict()
+
+    def __new__(cls):
+        if 'key' in A._dict:
+            print "EXISTS"
+            return A._dict['key']
+        else:
+            print "NEW"
+            return object.__new__(cls)
+
+    def __init__(self):
+        print "INIT"
+        A._dict['key'] = self
+```
+
+在上面，我们定义了一个类 `A`，并重载了 `__new__` 方法：当 `key` 在 `A._dict` 中时，直接返回 `A._dict['key']`，否则创建实例。
+
+执行情况：
+
+```
+>>> a1 = A()
+NEW
+INIT
+>>> a2 = A()
+EXISTS
+INIT
+>>> a3 = A()
+EXISTS
+INIT
+```
 
 # str & repr
 
@@ -318,14 +366,15 @@ True
 
 # 小结
 
+- `__new__` 在 `__init__` 之前被调用，用来创建实例。
 - `__str__` 是用 print 和 str 显示的结果，`__repr__` 是直接显示的结果。
 - `__getitem__` 用类似 `obj[key]` 的方式对对象进行取值
 - `__getattr__` 用于获取不存在的属性 obj.attr
 - `__call__` 使得可以对实例进行调用
 
-
 # 参考资料
 
+- [design patterns - Python's use of __new__ and __init__? - Stack Overflow](http://stackoverflow.com/questions/674304/pythons-use-of-new-and-init)
 - [定制类](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/0013946328809098c1be08a2c7e4319bd60269f62be04fa000)
 - [__setitem__ implementation in Python for Point(x,y) class - Stack Overflow](http://stackoverflow.com/questions/15774804/setitem-implementation-in-python-for-pointx-y-class)
 - [Python对象的特殊属性和方法 | Hom](http://gohom.win/2015/10/09/pySpecialObjMethod/)

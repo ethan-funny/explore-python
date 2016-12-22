@@ -1037,16 +1037,53 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x5B9A;&#x5236;&#x7C7B;&#x548C;&#x9B54;&#x6CD5;&#x65B9;&#x6CD5;">&#x5B9A;&#x5236;&#x7C7B;&#x548C;&#x9B54;&#x6CD5;&#x65B9;&#x6CD5;</h1>
-<p>&#x5728; Python &#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ECF;&#x5E38;&#x770B;&#x5230;&#x4EE5;&#x53CC;&#x4E0B;&#x5212;&#x7EBF; <code>__</code> &#x5305;&#x88F9;&#x8D77;&#x6765;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;&#x6700;&#x5E38;&#x89C1;&#x7684; <code>__init__</code>&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x88AB;&#x79F0;&#x4E3A;<strong>&#x9B54;&#x6CD5;&#x65B9;&#x6CD5;&#xFF08;magic method&#xFF09;&#x6216;&#x7279;&#x6B8A;&#x65B9;&#x6CD5;&#xFF08;special method&#xFF09;</strong>&#x3002;&#x7B80;&#x5355;&#x5730;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7ED9; Python &#x7684;&#x7C7B;&#x63D0;&#x4F9B;&#x7279;&#x6B8A;&#x529F;&#x80FD;&#xFF0C;&#x65B9;&#x4FBF;&#x6211;&#x4EEC;&#x5B9A;&#x5236;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x6BD4;&#x5982; <code>__init__</code> &#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5BF9;&#x7C7B;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
-<p>&#x5B8C;&#x6574;&#x7684;&#x7279;&#x6B8A;&#x65B9;&#x6CD5;&#x5217;&#x8868;&#x53EF;&#x5728;<a href="https://docs.python.org/2/reference/datamodel.html#special-method-names" _target="blank">&#x8FD9;&#x91CC;</a>&#x67E5;&#x770B;&#xFF0C;&#x672C;&#x6587;&#x53EA;&#x4ECB;&#x7ECD;&#x4EE5;&#x4E0B;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x7279;&#x6B8A;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<p>&#x5728; Python &#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ECF;&#x5E38;&#x770B;&#x5230;&#x4EE5;&#x53CC;&#x4E0B;&#x5212;&#x7EBF; <code>__</code> &#x5305;&#x88F9;&#x8D77;&#x6765;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;&#x6700;&#x5E38;&#x89C1;&#x7684; <code>__init__</code>&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x88AB;&#x79F0;&#x4E3A;<strong>&#x9B54;&#x6CD5;&#x65B9;&#x6CD5;&#xFF08;magic method&#xFF09;&#x6216;&#x7279;&#x6B8A;&#x65B9;&#x6CD5;&#xFF08;special method&#xFF09;</strong>&#x3002;&#x7B80;&#x5355;&#x5730;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7ED9; Python &#x7684;&#x7C7B;&#x63D0;&#x4F9B;&#x7279;&#x6B8A;&#x529F;&#x80FD;&#xFF0C;&#x65B9;&#x4FBF;&#x6211;&#x4EEC;&#x5B9A;&#x5236;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x6BD4;&#x5982; <code>__init__</code> &#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5BF9;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<p>&#x5B8C;&#x6574;&#x7684;&#x7279;&#x6B8A;&#x65B9;&#x6CD5;&#x5217;&#x8868;&#x53EF;&#x5728;<a href="https://docs.python.org/2/reference/datamodel.html#special-method-names" _target="blank">&#x8FD9;&#x91CC;</a>&#x67E5;&#x770B;&#xFF0C;&#x672C;&#x6587;&#x4ECB;&#x7ECD;&#x90E8;&#x5206;&#x5E38;&#x7528;&#x7684;&#x7279;&#x6B8A;&#x65B9;&#x6CD5;&#xFF1A;</p>
 <ul>
+<li><code>__new__</code></li>
 <li><code>__str__</code> , <code>__repr__</code></li>
 <li><code>__iter__</code></li>
 <li><code>__getitem__</code> , <code>__setitem__</code> , <code>__delitem__</code></li>
 <li><code>__getattr__</code> , <code>__setattr__</code> , <code>__delattr__</code></li>
 <li><code>__call__</code></li>
 </ul>
-<h1 id="str--repr">str &amp; repr</h1>
+<h1 id="new">new</h1>
+<p>&#x5728; Python &#x4E2D;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;&#x7C7B;&#x4F1A;&#x5148;&#x8C03;&#x7528; <code>__new__(cls[, ...])</code> &#x6765;&#x521B;&#x5EFA;&#x5B9E;&#x4F8B;&#xFF0C;&#x7136;&#x540E; <code>__init__</code> &#x65B9;&#x6CD5;&#x518D;&#x5BF9;&#x8BE5;&#x5B9E;&#x4F8B;&#xFF08;self&#xFF09;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<p>&#x5173;&#x4E8E; <code>__new__</code> &#x548C; <code>__init__</code> &#x6709;&#x51E0;&#x70B9;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF1A;</p>
+<ul>
+<li><code>__new__</code> &#x662F;&#x5728; <code>__init__</code> &#x4E4B;&#x524D;&#x88AB;&#x8C03;&#x7528;&#x7684;&#xFF1B;</li>
+<li><code>__new__</code> &#x662F;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;<code>__init__</code> &#x662F;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF1B;</li>
+<li>&#x91CD;&#x8F7D; <code>__new__</code> &#x65B9;&#x6CD5;&#xFF0C;&#x9700;&#x8981;&#x8FD4;&#x56DE;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#xFF1B;</li>
+</ul>
+<p>&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x91CD;&#x8F7D; <code>__new__</code> &#x65B9;&#x6CD5;&#x3002;&#x4F46;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;<strong>&#x63A7;&#x5236;&#x5B9E;&#x4F8B;&#x7684;&#x521B;&#x5EFA;&#x8FC7;&#x7A0B;</strong>&#xFF0C;&#x8FD9;&#x65F6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x91CD;&#x8F7D; <code>__new_</code> &#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x770B;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span><span class="hljs-params">(object)</span>:</span>
+    _dict = dict()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__new__</span><span class="hljs-params">(cls)</span>:</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-string">&apos;key&apos;</span> <span class="hljs-keyword">in</span> A._dict:
+            <span class="hljs-keyword">print</span> <span class="hljs-string">&quot;EXISTS&quot;</span>
+            <span class="hljs-keyword">return</span> A._dict[<span class="hljs-string">&apos;key&apos;</span>]
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">print</span> <span class="hljs-string">&quot;NEW&quot;</span>
+            <span class="hljs-keyword">return</span> object.__new__(cls)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">print</span> <span class="hljs-string">&quot;INIT&quot;</span>
+        A._dict[<span class="hljs-string">&apos;key&apos;</span>] = self
+</code></pre>
+<p>&#x5728;&#x4E0A;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x7C7B; <code>A</code>&#xFF0C;&#x5E76;&#x91CD;&#x8F7D;&#x4E86; <code>__new__</code> &#x65B9;&#x6CD5;&#xFF1A;&#x5F53; <code>key</code> &#x5728; <code>A._dict</code> &#x4E2D;&#x65F6;&#xFF0C;&#x76F4;&#x63A5;&#x8FD4;&#x56DE; <code>A._dict[&apos;key&apos;]</code>&#xFF0C;&#x5426;&#x5219;&#x521B;&#x5EFA;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x6267;&#x884C;&#x60C5;&#x51B5;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; a1 = A()
+NEW
+INIT
+&gt;&gt;&gt; a2 = A()
+EXISTS
+INIT
+&gt;&gt;&gt; a3 = A()
+EXISTS
+INIT
+</code></pre><h1 id="str--repr">str &amp; repr</h1>
 <p>&#x5148;&#x770B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span><span class="hljs-params">(object)</span>:</span>
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
@@ -1297,6 +1334,7 @@ call func <span class="hljs-keyword">del</span> attr ((<span class="hljs-string"
 <p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x5BF9;&#x5B9E;&#x4F8B;&#x8FDB;&#x884C;&#x8C03;&#x7528;&#x5C31;&#x597D;&#x50CF;&#x5BF9;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x4E00;&#x6837;&#x3002;</p>
 <h1 id="&#x5C0F;&#x7ED3;">&#x5C0F;&#x7ED3;</h1>
 <ul>
+<li><code>__new__</code> &#x5728; <code>__init__</code> &#x4E4B;&#x524D;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x7528;&#x6765;&#x521B;&#x5EFA;&#x5B9E;&#x4F8B;&#x3002;</li>
 <li><code>__str__</code> &#x662F;&#x7528; print &#x548C; str &#x663E;&#x793A;&#x7684;&#x7ED3;&#x679C;&#xFF0C;<code>__repr__</code> &#x662F;&#x76F4;&#x63A5;&#x663E;&#x793A;&#x7684;&#x7ED3;&#x679C;&#x3002;</li>
 <li><code>__getitem__</code> &#x7528;&#x7C7B;&#x4F3C; <code>obj[key]</code> &#x7684;&#x65B9;&#x5F0F;&#x5BF9;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x53D6;&#x503C;</li>
 <li><code>__getattr__</code> &#x7528;&#x4E8E;&#x83B7;&#x53D6;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5C5E;&#x6027; obj.attr</li>
@@ -1304,6 +1342,7 @@ call func <span class="hljs-keyword">del</span> attr ((<span class="hljs-string"
 </ul>
 <h1 id="&#x53C2;&#x8003;&#x8D44;&#x6599;">&#x53C2;&#x8003;&#x8D44;&#x6599;</h1>
 <ul>
+<li><a href="http://stackoverflow.com/questions/674304/pythons-use-of-new-and-init" _target="blank">design patterns - Python&apos;s use of <strong>new</strong> and <strong>init</strong>? - Stack Overflow</a></li>
 <li><a href="http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/0013946328809098c1be08a2c7e4319bd60269f62be04fa000" _target="blank">&#x5B9A;&#x5236;&#x7C7B;</a></li>
 <li><a href="http://stackoverflow.com/questions/15774804/setitem-implementation-in-python-for-pointx-y-class" _target="blank"><strong>setitem</strong> implementation in Python for Point(x,y) class - Stack Overflow</a></li>
 <li><a href="http://gohom.win/2015/10/09/pySpecialObjMethod/" _target="blank">Python&#x5BF9;&#x8C61;&#x7684;&#x7279;&#x6B8A;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5; | Hom</a></li>
@@ -1352,7 +1391,7 @@ call func <span class="hljs-keyword">del</span> attr ((<span class="hljs-string"
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"定制类和魔法方法","level":"1.6.4","depth":2,"next":{"title":"slots 魔法","level":"1.6.5","depth":2,"path":"Class/slots.md","ref":"Class/slots.md","articles":[]},"previous":{"title":"类方法和静态方法","level":"1.6.3","depth":2,"path":"Class/method.md","ref":"Class/method.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"showLevel":false,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"splitter":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"Ethan","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"toc":true,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 之旅","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Blog":"https://funhacks.net","Github":"https://github.com/ethan-funny/explore-python/"}},"gitbook":"*","description":"Notes for Learning Python","extension":null},"file":{"path":"Class/magic_method.md","mtime":"2016-12-12T13:06:31.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2016-12-20T06:04:07.128Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"定制类和魔法方法","level":"1.6.4","depth":2,"next":{"title":"slots 魔法","level":"1.6.5","depth":2,"path":"Class/slots.md","ref":"Class/slots.md","articles":[]},"previous":{"title":"类方法和静态方法","level":"1.6.3","depth":2,"path":"Class/method.md","ref":"Class/method.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"showLevel":false,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"splitter":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"Ethan","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"toc":true,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 之旅","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Blog":"https://funhacks.net","Github":"https://github.com/ethan-funny/explore-python/"}},"gitbook":"*","description":"Notes for Learning Python","extension":null},"file":{"path":"Class/magic_method.md","mtime":"2016-12-21T16:12:47.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2016-12-22T02:00:21.562Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

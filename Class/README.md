@@ -12,7 +12,6 @@ Python 是一门面向对象编程（Object Oriented Programming, OOP）的语�
 
 * [类和实例](./class_and_object.md)
 * [继承和多态](./inheritance_and_polymorphism.md)
-* [Mixin 模式](./mixin.md)
 * [类方法和静态方法](./method.md)
 * [定制类和魔法方法](./magic_method.md)
 * [slots 魔法](./slots.md)

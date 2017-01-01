@@ -12,8 +12,8 @@
             "weibo": null
         },
         "sidebar": {
-            "Blog": "https://funhacks.net",
-            "Github": "https://github.com/ethan-funny/explore-python/"
+            "个人主页": "https://funhacks.net",
+            "书籍源码": "https://github.com/ethan-funny/explore-python/"
         }
     },
     "output": null,

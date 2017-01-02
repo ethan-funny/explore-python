@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>异常处理 · Python 之旅</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>异常处理 · Python 之旅</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.1.0">
+        <meta name="generator" content="GitBook 3.2.2">
         <meta name="author" content="Ethan">
         
         
@@ -89,12 +89,12 @@
     
         
         <li>
-            <a href="https://funhacks.net" target="_blank" class="custom-link">Blog</a>
+            <a href="https://funhacks.net" target="_blank" class="custom-link">个人主页</a>
         </li>
     
         
         <li>
-            <a href="https://github.com/ethan-funny/explore-python/" target="_blank" class="custom-link">Github</a>
+            <a href="https://github.com/ethan-funny/explore-python/" target="_blank" class="custom-link">书籍源码</a>
         </li>
     
     
@@ -1051,7 +1051,7 @@ Traceback (most recent call last):
   File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
 ZeroDivisionError: integer division <span class="hljs-keyword">or</span> modulo by zero
 </code></pre>
-<p>&#x4E0A;&#x9762;&#x7684; <code>ZeroDivisionError</code> &#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x7C7B;&#xFF0C;&#x76F8;&#x5E94;&#x7684;&#x5F02;&#x5E38;&#x5BF9;&#x8C61;&#x5C31;&#x662F;&#x8BE5;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;Python &#x4E2D;&#x6240;&#x6709;&#x7684;&#x5F02;&#x5E38;&#x7C7B;&#x90FD;&#x662F;&#x4ECE; <code>BaseException</code> &#x7C7B;&#x6D3E;&#x751F;&#x7684;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x5F02;&#x5E38;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x5728;<a href="https://docs.python.org/2/library/exceptions.html#exception-hierarchy" _target="blank">&#x8FD9;&#x91CC;</a>&#x67E5;&#x770B;&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x7684; <code>ZeroDivisionError</code> &#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x7C7B;&#xFF0C;&#x76F8;&#x5E94;&#x7684;&#x5F02;&#x5E38;&#x5BF9;&#x8C61;&#x5C31;&#x662F;&#x8BE5;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;Python &#x4E2D;&#x6240;&#x6709;&#x7684;&#x5F02;&#x5E38;&#x7C7B;&#x90FD;&#x662F;&#x4ECE; <code>BaseException</code> &#x7C7B;&#x6D3E;&#x751F;&#x7684;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x5F02;&#x5E38;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x5728;<a href="https://docs.python.org/2/library/exceptions.html#exception-hierarchy" target="_blank">&#x8FD9;&#x91CC;</a>&#x67E5;&#x770B;&#x3002;</p>
 <h1 id="&#x4F7F;&#x7528;-tryexcept-&#x6355;&#x6349;&#x5F02;&#x5E38;">&#x4F7F;&#x7528; try/except &#x6355;&#x6349;&#x5F02;&#x5E38;</h1>
 <p>&#x5728;&#x7F16;&#x5199;&#x7A0B;&#x5E8F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x67D0;&#x6BB5;&#x4EE3;&#x7801;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x67D0;&#x79CD;&#x5F02;&#x5E38;&#xFF0C;&#x800C;&#x53C8;&#x4E0D;&#x5E0C;&#x671B;&#x7A0B;&#x5E8F;&#x4EE5;&#x5806;&#x6808;&#x8DDF;&#x8E2A;&#x7684;&#x5F62;&#x5F0F;&#x7EC8;&#x6B62;&#xFF0C;&#x8FD9;&#x65F6;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x6DFB;&#x52A0; <code>try/except</code> &#x6216;&#x8005; <code>try/finally</code> &#x8BED;&#x53E5;&#xFF08;&#x6216;&#x8005;&#x5B83;&#x4EEC;&#x7684;&#x7EC4;&#x5408;&#xFF09;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x6709;&#x4EE5;&#x4E0B;&#x4F7F;&#x7528;&#x5F62;&#x5F0F;&#xFF1A;</p>
 <pre><code>try...except...
@@ -1122,7 +1122,7 @@ Traceback (most recent call last):
     ^
 SyntaxError: unexpected EOF <span class="hljs-keyword">while</span> parsing
 </code></pre>
-<p>&#x90A3;&#x4E48;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x600E;&#x4E48;&#x5728;&#x7A0B;&#x5E8F;&#x6355;&#x83B7;&#x67D0;&#x4E9B;&#x96BE;&#x4EE5;&#x9884;&#x6599;&#x7684;&#x5F02;&#x5E38;&#x5462;&#xFF1F;&#x6211;&#x4EEC;&#x5728;&#x4E0A;&#x6587;&#x8BF4;&#x8FC7;&#xFF0C;Python &#x4E2D;&#x6240;&#x6709;&#x7684;&#x5F02;&#x5E38;&#x7C7B;&#x90FD;&#x662F;&#x4ECE; <code>BaseException</code> &#x7C7B;&#x6D3E;&#x751F;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;<code>ZeroDivisionError</code>&#x3001;<code>SyntaxError</code> &#x7B49;&#x90FD;&#x662F;&#x5B83;&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5BF9;&#x4E8E;&#x67D0;&#x4E9B;&#x96BE;&#x4EE5;&#x9884;&#x6599;&#x7684;&#x5F02;&#x5E38;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>BaseException</code> &#x6765;&#x6355;&#x83B7;&#xFF0C;&#x5728;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>Exception</code> &#x6765;&#x6355;&#x83B7;&#xFF0C;&#x56E0;&#x4E3A; <code>Exception</code> &#x662F;&#x5927;&#x90E8;&#x5206;&#x5F02;&#x5E38;&#x7684;&#x7236;&#x7C7B;&#xFF0C;&#x53EF;&#x4EE5;&#x5230;<a href="https://docs.python.org/2/library/exceptions.html#exception-hierarchy" _target="blank">&#x8FD9;&#x91CC;</a>&#x67E5;&#x770B;&#x6240;&#x6709;&#x5F02;&#x5E38;&#x7C7B;&#x7684;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x600E;&#x4E48;&#x5728;&#x7A0B;&#x5E8F;&#x6355;&#x83B7;&#x67D0;&#x4E9B;&#x96BE;&#x4EE5;&#x9884;&#x6599;&#x7684;&#x5F02;&#x5E38;&#x5462;&#xFF1F;&#x6211;&#x4EEC;&#x5728;&#x4E0A;&#x6587;&#x8BF4;&#x8FC7;&#xFF0C;Python &#x4E2D;&#x6240;&#x6709;&#x7684;&#x5F02;&#x5E38;&#x7C7B;&#x90FD;&#x662F;&#x4ECE; <code>BaseException</code> &#x7C7B;&#x6D3E;&#x751F;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;<code>ZeroDivisionError</code>&#x3001;<code>SyntaxError</code> &#x7B49;&#x90FD;&#x662F;&#x5B83;&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5BF9;&#x4E8E;&#x67D0;&#x4E9B;&#x96BE;&#x4EE5;&#x9884;&#x6599;&#x7684;&#x5F02;&#x5E38;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>BaseException</code> &#x6765;&#x6355;&#x83B7;&#xFF0C;&#x5728;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>Exception</code> &#x6765;&#x6355;&#x83B7;&#xFF0C;&#x56E0;&#x4E3A; <code>Exception</code> &#x662F;&#x5927;&#x90E8;&#x5206;&#x5F02;&#x5E38;&#x7684;&#x7236;&#x7C7B;&#xFF0C;&#x53EF;&#x4EE5;&#x5230;<a href="https://docs.python.org/2/library/exceptions.html#exception-hierarchy" target="_blank">&#x8FD9;&#x91CC;</a>&#x67E5;&#x770B;&#x6240;&#x6709;&#x5F02;&#x5E38;&#x7C7B;&#x7684;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x3002;</p>
 <p>&#x56E0;&#x6B64;&#xFF0C;&#x5BF9;&#x4E8E;&#x7B2C;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x7A0B;&#x5E8F;&#x505A;&#x4E00;&#x4E9B;&#x4FEE;&#x6539;&#xFF0C;&#x4F7F;&#x5176;&#x66F4;&#x52A0;&#x5065;&#x58EE;&#xFF1A;</p>
 <pre><code class="lang-python"><span class="hljs-keyword">try</span>:
     x = input(<span class="hljs-string">&apos;Enter x: &apos;</span>)
@@ -1263,7 +1263,7 @@ SomeError: invalid value
 <h1 id="&#x53C2;&#x8003;&#x8D44;&#x6599;">&#x53C2;&#x8003;&#x8D44;&#x6599;</h1>
 <ul>
 <li>&#x300A;Python &#x57FA;&#x7840;&#x6559;&#x7A0B;&#x300B;</li>
-<li><a href="http://www.runoob.com/python/python-exceptions.html" _target="blank">Python &#x5F02;&#x5E38;&#x5904;&#x7406;</a></li>
+<li><a href="http://www.runoob.com/python/python-exceptions.html" target="_blank">Python &#x5F02;&#x5E38;&#x5904;&#x7406;</a></li>
 </ul>
 
                                 
@@ -1308,7 +1308,7 @@ SomeError: invalid value
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"异常处理","level":"1.10","depth":1,"next":{"title":"单元测试","level":"1.11","depth":1,"path":"Testing/README.md","ref":"Testing/README.md","articles":[]},"previous":{"title":"协程","level":"1.9.4","depth":2,"path":"Process-Thread-Coroutine/coroutine.md","ref":"Process-Thread-Coroutine/coroutine.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"showLevel":false,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"splitter":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"Ethan","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"toc":true,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 之旅","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Blog":"https://funhacks.net","Github":"https://github.com/ethan-funny/explore-python/"}},"gitbook":"*","description":"Notes for Learning Python","extension":null},"file":{"path":"Exception/README.md","mtime":"2016-12-13T03:00:51.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2016-12-22T02:00:21.562Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"异常处理","level":"1.10","depth":1,"next":{"title":"单元测试","level":"1.11","depth":1,"path":"Testing/README.md","ref":"Testing/README.md","articles":[]},"previous":{"title":"协程","level":"1.9.4","depth":2,"path":"Process-Thread-Coroutine/coroutine.md","ref":"Process-Thread-Coroutine/coroutine.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"splitter":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"Ethan","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"toc":true,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 之旅","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"个人主页":"https://funhacks.net","书籍源码":"https://github.com/ethan-funny/explore-python/"}},"gitbook":"*","description":"Notes for Learning Python","extension":null},"file":{"path":"Exception/README.md","mtime":"2016-12-13T03:00:51.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-02T03:52:24.799Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

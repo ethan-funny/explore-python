@@ -1,0 +1,69 @@
+
+Python 之旅
+===
+
+## Python 简介
+
+Python 诞生于 1989 年的圣诞期间，由 [Guido van Rossum](https://gvanrossum.github.io/) 开发而成，目前 Guido 仍然是 Python 的主要开发者，主导着 Python 的发展方向，Python 社区经常称呼他为『仁慈的独裁者』。
+
+Python 是一门面向对象，解释型的高级程序设计语言，它的语法非常简洁、优雅，而这也是 Python 的一些设计哲学。Python 自带了很完善的库，涵盖了数据库，网络，文件处理，GUI 等方方面面，通过这些库，我们可以比较快速地解决一些棘手问题，也可以将其作为基础库，开发出一些高级库。
+
+目前 Python 在大部分领域都占有一席之地，比如 Web 开发，机器学习，科学计算等。不少大型网站都是使用 Python 作为后台开发语言的，比如 [YouTube](https://www.youtube.com/)、[Pinterest](https://www.pinterest.com/)、国内的[豆瓣](https://www.douban.com/)和[知乎](http://www.zhihu.com/)等。另外，有不少知名的机器学习库也是使用 Python 开发的，比如，[scikit-learn](http://scikit-learn.org/stable/) 是一个强大的机器学习库，[Theano](https://github.com/Theano/Theano) 是一个成熟的深度学习库。
+
+当然了，Python 也有一些缺点。Python 经常被人们吐槽的一点就是：运行速度慢，和 C/C++ 相比非常慢。但是，除了像视频高清解码等**计算密集型任务**对运行速度有较高的要求外，在大部分时候，我们可能并不需要非常快的运行速度。比如，一个程序使用 C 来实现，运行时间只需 0.01 秒，而使用 Python 来实现，需要 0.1 秒，虽然 Python 的运行时间是 C 的 10 倍，显然很慢，但对我们而言，这压根不是问题。
+
+## 关于本书
+
+本书是我学习和使用 Python 的总结。一开始，我也没想过要写这么多章节，当时只是挑选了感兴趣的知识点，希望能用深入浅出的方式把它们写清楚，以加深对它们的理解，而不是停留在『感觉好像懂了』的状态中。通过这种方式，我对一些概念的理解也越来越深入，以至于在后面写的时候，我发现以前对一些概念的理解不是很透彻，于是就继续写，越写越多。
+
+我在本书的写作中，给自己提了一个要求：尽量深入浅出，条理清晰。至于是否达到了，希望读者们批评指正，并给我提意见和建议。
+
+本书的每章基本上都是独立的，读者可以挑选感兴趣的章节进行阅读。本书目前有 15 个章节，目录结构如下：
+
+- 第 1 章：介绍一些基础知识，包括 Python 中的输入和输出，字符编码。
+- 第 2 章：介绍常用数据类型，比如字符串、列表和字典等。
+- 第 3 章：介绍函数的定义和函数参数魔法。
+- 第 4 章：介绍 Python 中的函数式编程，包括匿名函数、闭包和装饰器等。
+- 第 5 章：介绍 Python 中类的使用，包括类方法、静态方法、super 和元类的使用等。
+- 第 6 章：介绍 Python 中的高级特性，比如生成器，上下文管理器。
+- 第 7 章：介绍文件和目录操作，os 的使用。
+- 第 8 章：介绍使用 Python 处理进程、线程和协程。
+- 第 9 章：异常处理。
+- 第 10 章：单元测试。
+- 第 11 章：正则表达式，re 模块的使用。
+- 第 12 章：HTTP 服务，requests 模块的使用。
+- 第 13 章：一些标准模块的使用，比如 argparse、collections 和 datetime 等。
+- 第 14 章：一些第三方模块的使用。
+- 第 15 章：结束语。
+
+另外，**本书使用的 Python 版本是 2.7.11，操作系统是 macOS**。如果用了 Python3，本书会标明。
+
+本书将会持续进行修订和更新，读者如果遇到问题，请及时向我反馈，我会在第一时间加以解决。
+
+## 声明
+
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+
+本书由 [Ethan](https://github.com/ethan-funny) 编写，采用 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh) 协议发布。
+
+这意味着你可以在非商业性使用的前提下自由转载，但必须：
+
+1. 保持署名
+2. 不对本书进行修改
+
+
+## 联系我
+
+如果你对于本书有什么建议或意见，欢迎批评指正，并联系我。
+
+- [个人主页](https://funhacks.net)
+- [GitHub](https://github.com/ethan-funny)
+- [Twitter](https://twitter.com/pihacks)
+
+## 支持我
+
+如果你觉得本书对你有所帮助，不妨请我喝杯咖啡，感谢支持！
+
+<img src='https://ooo.0o0.ooo/2016/12/12/584ec2b819d07.png' width='600'>
+
+

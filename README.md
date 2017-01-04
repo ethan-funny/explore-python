@@ -1,4 +1,4 @@
-![cover](https://ooo.0o0.ooo/2016/12/13/584ff62e73338.png)
+![cover](https://ofaatpail.qnssl.com/2017-01-03-explore-python-cover.png)
 
 Python 之旅
 ===
@@ -21,7 +21,7 @@ Python 是一门面向对象，解释型的高级程序设计语言，它的语�
 
 首先，我参考一些相关的书籍，作了一个基础的思维导图，如下：
 
-![思维导图](https://ooo.0o0.ooo/2016/12/28/58635d660710c.png)
+![思维导图](https://ofaatpail.qnssl.com/2017-01-03-explore-python2.png)
 
 接下来，就要开始写作了，这也是最艰难的一关。
 
@@ -83,6 +83,6 @@ Python 是一门面向对象，解释型的高级程序设计语言，它的语�
 
 如果你觉得本书对你有所帮助，不妨请我喝杯咖啡，感谢支持！
 
-<img src='https://ooo.0o0.ooo/2016/12/12/584ec2b819d07.png' width='600'>
+<img src='https://ofaatpail.qnssl.com/2017-01-03-Ali_Wechat_Pay.png' width='600'>
 
 

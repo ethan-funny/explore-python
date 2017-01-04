@@ -56,7 +56,7 @@ class Exam(object):
 90
 >>> e.score = 200
 >>> e.score
-200
+100
 ```
 
 在上面，我们给方法 score 加上了 `@property`，于是我们可以把 score 当成一个属性来用，此时，又会创建一个新的装饰器 `score.setter`，它可以把被装饰的方法变成属性来赋值。

@@ -475,7 +475,7 @@ $ python
 
 ## SOCKS 代理
 
-Requess 自 2.10.0 版起，开始支持 SOCKS 协议的代理，如果要使用，我们还需安装一个第三方库：
+Requests 自 2.10.0 版起，开始支持 SOCKS 协议的代理，如果要使用，我们还需安装一个第三方库：
 
 ```
 $ pip install requests[socks]

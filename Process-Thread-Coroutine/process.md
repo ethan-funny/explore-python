@@ -62,7 +62,7 @@ I am child process (86646) and my parent is (86645).
 
 # 多进程
 
-Python 提供了一个 [multiprocessing][mp] 模块，利用它，我们可以来编写跨平台的多进程程序，但是这里有一个坑，一样的代码在Windows和Linux下运行的结果可能不同。
+Python 提供了一个 [multiprocessing][mp] 模块，利用它，我们可以来编写跨平台的多进程程序，但需要注意的是 multiprocessing 在 Windows 和 Linux 平台的不一致性：一样的代码在 Windows 和 Linux 下运行的结果可能不同。因为 Windows 的进程模型和 Linux 不一样，Windows 下没有 fork。
 
 我们先来看一个简单的例子，该例子演示了在主进程中启动一个子进程，并等待其结束，代码如下：
 
@@ -94,7 +94,7 @@ Run child process test (10075)...
 Process end.
 ```
 
-## multiprocessing与平台有关
+## multiprocessing 与平台有关
 
 ``` python
 import random
@@ -111,14 +111,23 @@ if __name__ == "__main__":
     p = Process(target=show_num)
     p.start()
     p.join()
-
 ```
-在Windows下运行以上代码，输出的结果如下（你得到不一样的结果也是对的）:
+
+在 Windows 下运行以上代码，输出的结果如下（你得到不一样的结果也是对的）：
+
 ```
 pid:6504, num is 25
 pid:6880, num is 6
 ```
-在Linux下运行以上代码，可以尝试一下，pid确实不同，但是得到的num一定相同。
+
+我们发现，num 的值是不一样的！
+
+在 Linux 下运行以上代码，可以看到 num 的值是一样的：
+
+```
+pid:11747, num is 13
+pid:11748, num is 13
+```
 
 ## 使用进程池创建多个进程
 

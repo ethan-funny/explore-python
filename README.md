@@ -58,7 +58,7 @@ Python 是一门面向对象，解释型的高级程序设计语言，它的语�
 
 目前本书暂时提供 epub 格式的电子版，因为生成的 pdf 和 mobi 版本并不是很美观，不利于阅读，故暂不提供。
 
-[点击下载 epub 版本](https://github.com/ethan-funny/explore-python/raw/master/explore-python.epub)
+[点击下载 epub 版本](https://github.com/ethan-funny/explore-python/files/691859/explore-python.epub.zip)
 
 ## 声明
 

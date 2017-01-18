@@ -175,7 +175,7 @@ All subprocesses done.
 
 # 进程间通信
 
-进程间的通信可以通过管道（Pipe），队列（Queue）等多种方式来实现。Python 的 multiprocessing 模块封装了底层的实现机制，让我们可以很容器地实现进程间的通信。
+进程间的通信可以通过管道（Pipe），队列（Queue）等多种方式来实现。Python 的 multiprocessing 模块封装了底层的实现机制，让我们可以很容易地实现进程间的通信。
 
 下面以队列（Queue）为例，在父进程中创建两个子进程，一个往队列写数据，一个从对列读数据，代码如下：
 

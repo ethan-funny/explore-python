@@ -1,6 +1,6 @@
 {
     "name": "Python 之旅",
-    "introduction":"Explore Python，经验总结式的代码学习之旅。"
+    "introduction":"Explore Python，经验总结式的代码学习之旅。",
     "path": {
         "toc": "SUMMARY.md"
         }

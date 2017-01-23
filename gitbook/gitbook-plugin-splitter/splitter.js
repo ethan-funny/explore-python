@@ -1,6 +1,12 @@
-/// <reference path="../typings/tsd.d.ts" />
-
 require(['gitbook', 'jQuery'], function (gitbook, $) {
+  
+	// MEMO:
+	// Gitbook is calculated as "calc (100% - 60px)" in the horizontal width when the width of the screen size is 600px
+	// or less.
+	// In this case, since contradiction occurs in the implementation of this module, return.
+	if($(window).width() <= 600) {
+		return;
+	}
 
 	gitbook.events.bind('start', function () {
 	});
@@ -30,7 +36,7 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
 		dividerWidth = $divider.outerWidth();
 		dividerCenterOffsetLeft = $divider.outerWidth() / 2;
 
-		// restore split state from localStrage
+		// restore split state from sessionStorage
 		splitState = getSplitState();
 		setSplitState(
 			splitState.summaryWidth,
@@ -92,7 +98,7 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
 		});
 
 		function getSplitState() {
-			var splitState = JSON.parse(localStorage.getItem(KEY_SPLIT_STATE));
+			var splitState = JSON.parse(sessionStorage.getItem(KEY_SPLIT_STATE));
 			splitState || (splitState = {});
 			splitState.summaryWidth || (splitState.summaryWidth = $summary.outerWidth());
 			splitState.summaryOffset || (splitState.summaryOffset = $summary.position().left);
@@ -101,7 +107,7 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
 		}
 
 		function saveSplitState(summaryWidth, summaryWidthOffset, bookBodyOffset) {
-			localStorage.setItem(KEY_SPLIT_STATE, JSON.stringify({
+			sessionStorage.setItem(KEY_SPLIT_STATE, JSON.stringify({
 				summaryWidth: summaryWidth,
 				summaryOffset: summaryWidthOffset,
 				bookBodyOffset: bookBodyOffset,

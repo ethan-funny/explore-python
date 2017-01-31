@@ -331,30 +331,28 @@ r.raw.read(10)
 >>> import requests
 
 >>> headers = {'User-Agent': 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'}
->>> r = requests.get('https://toutiao.io/shares/789751/url', headers=headers)
+>>> r = requests.get('https://toutiao.io/k/c32y51', headers=headers)
 
 >>> r.status_code
 200
 
 >>> r.url   # 发生了重定向，响应对象的 url，跟请求对象不一样
-u'https://funhacks.net/2016/12/06/flask_react_news/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io'
+u'http://www.jianshu.com/p/490441391db6?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io'
 
 >>> r.history
-[<Response [302]>, <Response [302]>]
->>> r.history[0].text
-u'<html><body>You are being <a href="https://toutiao.io/k/fsntvg">redirected</a>.</body></html>'
+[<Response [302]>]
 
->>> r.history[1].text
-u'<html><body>You are being <a href="https://funhacks.net/2016/12/06/flask_react_news/?hmsr=toutiao.io&amp;utm_medium=toutiao.io&amp;utm_source=toutiao.io">redirected</a>.</body></html>'
+>>> r.history[0].text
+u'<html><body>You are being <a href="http://www.jianshu.com/p/490441391db6?hmsr=toutiao.io&amp;utm_medium=toutiao.io&amp;utm_source=toutiao.io">redirected</a>.</body></html>'
 ```
 
-可以看到，我们访问网址 `https://toutiao.io/shares/789751/url` 被重定向到了下面的链接：
+可以看到，我们访问网址 `https://toutiao.io/k/c32y51` 被重定向到了下面的链接：
 
 ```python
-u'https://funhacks.net/2016/12/06/flask_react_news/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io'
+http://www.jianshu.com/p/490441391db6?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io'
 ```
 
-我们还看到 `r.history` 包含了两个 Response 对象列表，我们可以用它来追踪重定向。
+我们还看到 `r.history` 包含了一个 Response 对象列表，我们可以用它来追踪重定向。
 
 如果请求方法是 GET、POST、PUT、OPTIONS、PATCH 或 DELETE，我们可以通过 `all_redirects` 参数禁止重定向：
 
@@ -362,15 +360,13 @@ u'https://funhacks.net/2016/12/06/flask_react_news/?hmsr=toutiao.io&utm_medium=t
 >>> import requests
 
 >>> headers = {'User-Agent': 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'}
->>> r = requests.get('https://toutiao.io/shares/789751/url', headers=headers, allow_redirects=False)
->>> r.status_code
-200
+>>> r = requests.get('https://toutiao.io/k/c32y51', headers=headers, allow_redirects=False)
 >>> r.url    # 禁止重定向，响应对象的 url 跟请求对象一致
-u'https://toutiao.io/shares/789751/url'
+u'https://toutiao.io/k/c32y51'
 >>> r.history
 []
 >>> r.text
-u'<html><body>You are being <a href="https://toutiao.io/k/fsntvg">redirected</a>.</body></html>'
+u'<html><body>You are being <a href="http://www.jianshu.com/p/490441391db6?hmsr=toutiao.io&amp;utm_medium=toutiao.io&amp;utm_source=toutiao.io">redirected</a>.</body></html>'
 ```
 
 # Cookie

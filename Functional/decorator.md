@@ -313,7 +313,7 @@ def hello():
 'wrapped'
 ```
 
-为了消除这样的副作用，Python 中的 functool 包提供了一个 wraps 的装饰器：
+为了消除这样的副作用，Python 中的 functools 包提供了一个 wraps 的装饰器：
 
 ```python
 from functools import wraps

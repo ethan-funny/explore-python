@@ -3,6 +3,10 @@
 Python 之旅
 ===
 
+![Version](https://img.shields.io/badge/version-1.0-brightgreen.svg)
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-brightgreen.svg)](https://raw.githubusercontent.com/ethan-funny/explore-python/master/LICENSE)
+[![Analytics](https://ga-beacon.appspot.com/UA-62960961-2/explore-python/readme)](https://github.com/igrigorik/ga-beacon)
+
 ## Python 简介
 
 Python 诞生于 1989 年的圣诞期间，由 [Guido van Rossum](https://gvanrossum.github.io/) 开发而成，目前 Guido 仍然是 Python 的主要开发者，主导着 Python 的发展方向，Python 社区经常称呼他为『仁慈的独裁者』。

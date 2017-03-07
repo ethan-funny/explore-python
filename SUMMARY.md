@@ -53,6 +53,7 @@
     * [argparse](Standard-Modules/argparse.md)
     * [base64](Standard-Modules/base64.md)
     * [collections](Standard-Modules/collections.md)
+    * [itertools](Standard-Modules/itertools.md)
     * [datetime](Standard-Modules/datetime.md)
     * [hashlib](Standard-Modules/hashlib.md)
     * [hmac](Standard-Modules/hmac.md)

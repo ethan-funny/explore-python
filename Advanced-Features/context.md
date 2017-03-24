@@ -49,7 +49,7 @@ Exiting context      # 调用了 __exit__ 方法
 - Point(3, 4) 生成了一个上下文管理器；
 - 调用上下文管理器的 `__enter__()` 方法，并将 `__enter__()` 方法的返回值赋给 as 字句中的变量 pt;
 - 执行**语句体**（指 with 语句包裹起来的代码块）内容，输出 distance；
-- 不管执行过程中是否发生异常，都执行上下文管理器的 `__exit__()` 方法。`__exit__()` 方法负责执行『清理』工作，如释放资源，关闭文件等。如果执行过程没有出现异常，或者语句体中执行了语句 break/continue/return，则以 None 作为参数调用 `__exit__(None, None, None) `；如果执行过程中出现异常，则使用 sys.exc_info 得到的异常信息为参数调用 `__exit__(exc_type, exc_value, exc_traceback)`；
+- 不管执行过程中是否发生异常，都执行上下文管理器的 `__exit__()` 方法。`__exit__()` 方法负责执行『清理』工作，如释放资源，关闭文件等。如果执行过程没有出现异常，或者语句体中执行了语句 break/continue/return，则以 None 作为参数调用 `__exit__(None, None, None) `；如果执行过程中出现异常，则使用 `sys.exc_info` 得到的异常信息为参数调用 `__exit__(exc_type, exc_value, exc_traceback)`；
 - 出现异常时，如果 `__exit__(type, value, traceback)` 返回 False 或 None，则会重新抛出异常，让 with 之外的语句逻辑来处理异常；如果返回 True，则忽略异常，不再对异常进行处理；
 
 上面的 with 语句执行过程没有出现异常，我们再来看出现异常的情形：

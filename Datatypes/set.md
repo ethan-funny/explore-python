@@ -56,7 +56,7 @@ set(['a', 'c', 'b', 4, 'd', 'e'])
 
 ## 删除元素
 
-`remove()` 方法可以删除集合中的元素。
+`remove()` 方法可以删除集合中的元素, 但是删除不存在的元素，会抛出 KeyError，可改用 `discard()`。
 
 看看例子：
 
@@ -67,10 +67,11 @@ set(['a', 'c', 'b', 'd'])
 >>> s.remove('a')           # 删除元素 'a'
 >>> s
 set(['c', 'b', 'd'])
->>> s.remove('e')           # 删除不存在的元素，会抛出 KeyErro
+>>> s.remove('e')           # 删除不存在的元素，会抛出 KeyError
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'e'
+>>> s.discard('e')          # 删除不存在的元素, 不会抛出 KeyError
 ```
 
 ## 交集/并集/差集

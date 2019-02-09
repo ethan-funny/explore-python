@@ -5,7 +5,6 @@ Python 之旅
 
 ![Version](https://img.shields.io/badge/version-1.0-brightgreen.svg)
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-brightgreen.svg)](https://raw.githubusercontent.com/ethan-funny/explore-python/master/LICENSE)
-[![Analytics](https://ga-beacon.appspot.com/UA-62960961-2/explore-python/readme)](https://github.com/igrigorik/ga-beacon)
 
 ## Python 简介
 

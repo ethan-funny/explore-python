@@ -80,14 +80,8 @@ Python 是一门面向对象，解释型的高级程序设计语言，它的语�
 | 时间 | 说明 |
 | :---: | :---: |
 | 2017-01-03 | 发布版本 v1.0 |
+| 2019-02-09 | fix typo      |
 
-## 联系我
-
-如果你对于本书有什么建议或意见，欢迎批评指正，并联系我。
-
-- [个人主页](http://funhacks.net)
-- [GitHub](https://github.com/ethan-funny)
-- [Twitter](https://twitter.com/pihacks)
 
 ## 支持我
 

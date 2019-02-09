@@ -13,7 +13,9 @@ Python 诞生于 1989 年的圣诞期间，由 [Guido van Rossum](https://gvanro
 
 Python 是一门面向对象，解释型的高级程序设计语言，它的语法非常简洁、优雅，而这也是 Python 的一些设计哲学。Python 自带了很完善的库，涵盖了数据库，网络，文件处理，GUI 等方方面面，通过这些库，我们可以比较快速地解决一些棘手问题，也可以将其作为基础库，开发出一些高级库。
 
-目前 Python 在大部分领域都占有一席之地，比如 Web 开发，机器学习，科学计算等。不少大型网站都是使用 Python 作为后台开发语言的，比如 [YouTube](https://www.youtube.com/)、[Pinterest](https://www.pinterest.com/)、国内的[豆瓣](https://www.douban.com/)和[知乎](http://www.zhihu.com/)等。另外，有不少知名的机器学习库也是使用 Python 开发的，比如，[scikit-learn](http://scikit-learn.org/stable/) 是一个强大的机器学习库，[Theano](https://github.com/Theano/Theano) 是一个成熟的深度学习库。
+目前 Python 在大部分领域都占有一席之地，比如 Web 开发，机器学习，科学计算等。不少大型网站都是使用 Python 作为后台开发语言的，比如 [YouTube](https://www.youtube.com/)、[Pinterest](https://www.pinterest.com/)、国内的[豆瓣](https://www.douban.com/)和[知乎](http://www.zhihu.com/)等。
+
+另外，有不少知名的机器学习库也是使用 Python 开发的，比如，[scikit-learn](http://scikit-learn.org/stable/) 是一个强大的机器学习库，[PyTorch](https://pytorch.org/) 是一个成熟的深度学习库。
 
 当然了，Python 也有一些缺点。Python 经常被人们吐槽的一点就是：运行速度慢，和 C/C++ 相比非常慢。但是，除了像视频高清解码等**计算密集型任务**对运行速度有较高的要求外，在大部分时候，我们可能并不需要非常快的运行速度。比如，一个程序使用 C 来实现，运行时间只需 0.01 秒，而使用 Python 来实现，需要 0.1 秒，虽然 Python 的运行时间是 C 的 10 倍，显然很慢，但对我们而言，这压根不是问题。
 

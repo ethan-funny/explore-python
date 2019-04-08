@@ -109,7 +109,7 @@ False
 
 - os.walk
 
-os.walk 是遍历目录常用的模块，它返回一个包含 3 个元素的元祖：(dirpath, dirnames, filenames)。dirpath 是以 string 字符串形式返回该目录下所有的绝对路径；dirnames 是以列表 list 形式返回每一个绝对路径下的文件夹名字；filesnames 是以列表 list 形式返回该路径下所有文件名字。
+os.walk 是遍历目录常用的模块，它返回一个包含 3 个元素的元组：(dirpath, dirnames, filenames)。dirpath 是以 string 字符串形式返回该目录下所有的绝对路径；dirnames 是以列表 list 形式返回每一个绝对路径下的文件夹名字；filenames 是以列表 list 形式返回该路径下所有文件名字。
 
 ```python
 >>> for root, dirs, files in os.walk('/Users/ethan/coding'):

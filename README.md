@@ -26,7 +26,7 @@ Python 是一门面向对象，解释型的高级程序设计语言，它的语�
 
 首先，我参考一些相关的书籍，作了一个基础的思维导图，如下：
 
-![思维导图](https://i.loli.net/2020/03/23/uZN8aehmwl14XcG.png)
+![Eng journy](PYTHONroadmap.png)
 
 接下来，就要开始写作了，这也是最艰难的一关。
 

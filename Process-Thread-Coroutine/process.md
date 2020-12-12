@@ -129,6 +129,29 @@ pid:11747, num is 13
 pid:11748, num is 13
 ```
 
+这是因为根据不同的平台，multiprocessing支持三种启动进程的办法：
+#### spawn
+父进程会启动一个新的解释器，子进程只会继承run()所需的资源。
+不必要的文件描述符和句柄（一种指针）不会被继承。
+该方法和fork，forkserver相比，启动进程较慢。
+
+可在Unix和Windows上使用。 Windows上的默认设置。
+
+#### fork
+父进程使用 os.fork() 来产生 Python 解释器分叉。
+子进程在开始时实际上与父进程相同，并且会继承父进程的所有资源。
+多线程的安全是有问题的。
+
+只能在Unix上使用。Unix上的默认设置。
+
+#### forkserver
+程序启动并选择forkserver启动方法时，将启动一个服务器进程。
+之后每当需要一个新进程时，父进程就会连接到服务器并请求它分叉一个新进程。
+分叉服务器进程是单线程的，因此使用 os.fork() 是安全的。
+没有不必要的资源被继承。
+
+可在Unix平台上使用，并支持通过Unix管道传递文件描述符。
+
 ## 使用进程池创建多个进程
 
 在上面，我们只是创建了一个进程，如果要创建多个进程呢？Python 提供了**进程池**的方式，让我们批量创建子进程，让我们看一个简单的示例：
@@ -254,9 +277,7 @@ DONE
 - [编程中的进程、线程、协程、同步、异步、回调 · 浮生半日闲](https://wangdashuaihenshuai.github.io/2015/10/17/%E7%BC%96%E7%A8%8B%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E5%8D%8F%E7%A8%8B%E3%80%81%E5%90%8C%E6%AD%A5%E3%80%81%E5%BC%82%E6%AD%A5%E3%80%81%E5%9B%9E%E8%B0%83/)
 - [python中多进程以及多线程编程的总结 - Codefly](http://sunms.codefly.top/2016/11/05/python%E4%B8%AD%E5%A4%9A%E8%BF%9B%E7%A8%8B%E4%BB%A5%E5%8F%8A%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B%E7%9A%84%E6%80%BB%E7%BB%93/)
 - [multithreading - Python multiprocessing.Pool: when to use apply, apply_async or map? - Stack Overflow](http://stackoverflow.com/questions/8533318/python-multiprocessing-pool-when-to-use-apply-apply-async-or-map)
-
+- [multiprocessing --- 基于进程的并行¶](https://docs.python.org/zh-cn/3/library/multiprocessing.html)
 
 
 [mp]: https://docs.python.org/2/library/multiprocessing.html
-
-

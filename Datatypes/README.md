@@ -7,7 +7,7 @@
 所有序列类型都可以进行某些通用的操作，比如：
 
 - 索引（indexing）
-- 分片（sliceing）
+- 分片（slicing）
 - 迭代（iteration）
 - 加（adding）
 - 乘（multiplying）

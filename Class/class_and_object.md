@@ -30,7 +30,7 @@ class Animal(object):
 然后，在创建实例的时候，传入参数：
 
 ```python
->>> animal = Aniaml('dog1')   # 传入参数 'dog1'
+>>> animal = Animal('dog1')   # 传入参数 'dog1'
 >>> animal.name               # 访问对象的 name 属性
 'dog1'
 ```

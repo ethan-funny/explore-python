@@ -281,6 +281,7 @@ name: ethan
 ```
 
 iteritems 的作用大致相同，但会返回一个迭代器对象而不是列表，同样，我们也可以使用这个方法来对字典进行遍历，而且这也是推荐的做法：
+(注：iteritems 在 python3 中已不再支持，如有需要可以使用 iter(d.items()))
 
 ```python
 >>> d = {'name': 'ethan', 'age': 20}
@@ -296,6 +297,7 @@ name: ethan
 ## keys/iterkeys
 
 keys 方法将字典的键以列表形式返回，iterkeys 则返回针对键的迭代器。
+(注：iterkeys 在 python3 中已不再支持，如有需要可以使用 iter(d.keys()))
 
 看看例子：
 
@@ -310,6 +312,7 @@ keys 方法将字典的键以列表形式返回，iterkeys 则返回针对键的
 ## values/itervalues
 
 values 方法将字典的值以列表形式返回，itervalues 则返回针对值的迭代器。
+(注：itervalues 在 python3 中已不再支持，如有需要可以使用 iter(d.values()))
 
 看看例子：
 
